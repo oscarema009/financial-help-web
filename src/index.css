@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Estilos personalizados */
+.section {
+  @apply h-screen flex items-center justify-center text-center;
+}
+
