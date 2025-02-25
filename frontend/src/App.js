@@ -5,7 +5,10 @@ import Landing from "./pages/Landing";
 import AboutUs from "./pages/About";
 //import Portfolios from "./pages/PortafolioPage";
 import Profiles from "./pages/InvestmentProfiles";
+import Pymes from "./pages/Pymes";
+import Services from "./pages/Services";
 import ContactPage from "./pages/ContactPage";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -15,9 +18,11 @@ function App() {
 
       {/* Secciones */}
       <Landing />
-      <AboutUs />
+      
       
       <Profiles />
+      <Services/>
+      
       <ContactPage />
 
       {/* Pie de página */}

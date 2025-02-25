@@ -6,8 +6,8 @@ import PerfilEmpresa from "../assets/perfil empresa.png";
 
 const InvestmentProfiles = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold text-center mb-8 text-blue-600">Perfiles de Inversión</h1>
+    <div className="p-8 bg-[#303e5b] min-h-screen">
+      <h1 className="text-2xl font-bold text-center mb-8 text-white">Perfiles de Inversión</h1>
       {/* Contenedor principal */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Card 1 - Riesgo Bajo */}
