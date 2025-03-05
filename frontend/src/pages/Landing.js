@@ -1,80 +1,77 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import investmentImage from "../assets/dollar.png";
-import extraImage from "../assets/2.png";
+
+// Sustituye estas imágenes por las que quieras (como las de los celulares que aparecen en la ilustración)
+import PhoneImage1 from "../assets/tablet.png";  // Puedes colocar una imagen con mockup de celular
 
 export default function LandingPage() {
   return (
-    <section className="relative w-full h-screen flex items-center px-6 md:px-12 bg-[#5572B2]">
-      {/* Imagen flotante a la izquierda */}
-      <motion.img 
-        src={investmentImage} 
-        alt="Investment" 
-        className="w-1/4 max-w-md absolute left-10 md:left-20 top-1/4 transform -translate-y-1/2"
-        initial={{ opacity: 0, x: -50 }} 
-        animate={{ opacity: 1, x: 0 }} 
-        transition={{ duration: 0.8 }}
-      />
+    <section className="relative w-full h-auto md:h-[80vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-10 bg-gradient-to-r from-[#1C2751] to-[#0A183D] overflow-hidden">
+      
+      {/* Contenedor de imágenes (solo visible en pantallas medianas y grandes) */}
+      <div className="hidden md:flex absolute left-5 md:left-16 top-1/4 space-x-4 z-10 ">
+        <motion.img 
+          src={PhoneImage1} 
+          alt="Phone 1"
+          className="h-[60vh] w-[60vh] drop-shadow-lg"
+          initial={{ opacity: 0, x: -50 }} 
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 0.8 }}
+        />
+        
+      </div>
 
-      {/* Contenido de texto y botones */}
-      <div className="text-left w-full md:w-2/3 flex flex-col items-start ml-auto pr-10 md:pr-20">
-        <motion.h1 
-          className="text-6xl md:text-5xl font-bold text-[#1C2751] mb-6"
+      {/* Contenido de texto - full width en móvil, mitad derecha en desktop */}
+      <div className="ml-auto text-left w-full md:w-1/2 z-10">
+        <motion.p 
+          className="text-[#00A3FF] uppercase font-bold tracking-wider mb-2 text-sm md:text-base"
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8 }}
         >
-          Invirtiendo con confianza,
-          <span className="text-white"> aseguramos tu crecimiento económico.</span>
-        </motion.h1>
-        <motion.p 
-          className="text-x2 md:text-2xl text-[#1C2751] mb-8 font-bold"
+          Estrategias LB
+        </motion.p>
+
+        <motion.h1 
+          className="text-3xl md:text-5xl font-bold text-white mb-4"
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Estrategias LB te ayuda a construir un futuro financiero sólido con inversiones seguras.
+          Invertí en Vos
+        </motion.h1>
+
+        <motion.p 
+          className="text-base md:text-xl text-[#c9daff] mb-6"
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          Operá carteras de CEDEARs de las industrias más relevantes armadas por nuestros especialistas.
         </motion.p>
-        
-        {/* Botones */}
-        <div className="flex space-x-6">
-          <motion.a 
-            href="#inversiones" 
-            className="px-7 py-4 bg-[#1C2751] text-white text-2xl font-semibold rounded-lg shadow-lg hover:bg-[#344C92] transition"
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, delay: 0.4 }}
+
+        {/* Botón centrado en móvil, alineado a la izquierda en desktop */}
+        <motion.div 
+          className="flex justify-center md:justify-start"
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <a 
+            href="#inversiones"
+            className="bg-[#00A3FF] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#008BCC] transition"
           >
-            Inversiones
-          </motion.a>
-          <motion.a 
-            href="#portafolios" 
-            className="px-8 py-4 bg-[#344C92] text-white text-2xl font-semibold rounded-lg shadow-lg hover:bg-[#82A1D1] transition"
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            Portafolios
-          </motion.a>
-        </div>
+            Invertir
+          </a>
+        </motion.div>
       </div>
-      
-      {/* Imagen en la parte inferior derecha */}
-      <motion.img 
-        src={extraImage} 
-        alt="Extra Investment" 
-        className="w-1/3  absolute bottom-10 right-10 rounded-2xl "
-        initial={{ opacity: 0, x: 50 }} 
-        animate={{ opacity: 1, x: 0 }} 
-        transition={{ duration: 0.8, delay: 0.4 }}
-      />
-      
+
+      {/* En móvil, si quieres mostrar una imagen también */}
+      <div className="md:hidden flex justify-center mt-8">
+        <img src={PhoneImage1} alt="Phone Mockup" className="w-1/3 drop-shadow-lg"/>
+      </div>
     </section>
   );
 }
-
-
-
-
 

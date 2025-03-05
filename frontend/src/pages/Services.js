@@ -19,29 +19,23 @@ const services = [
     link: "/asesorias",
   },
   {
-    title: "Administración de Cuentas",
-    description: "Gestionamos y optimizamos tu cuenta para un mejor rendimiento financiero.",
-    image: administracionImg,
-    link: "/administracion",
-  },
-  {
     title: "Gestión de Portafolios",
     description: "Administramos tu cartera de inversión con estrategias avanzadas.",
     image: portafoliosImg,
     link: "/portafolios",
   },
-  {
-    title: "Capacitaciones Privadas",
-    description: "Aprendé estrategias de inversión con sesiones exclusivas y personalizadas.",
-    image: capacitacionesImg,
-    link: "/capacitaciones",
-  },
-  {
-    title: "Apertura de Cuenta Extranjera",
-    description: "Accedé a mercados internacionales con una cuenta en el exterior.",
-    image: cuentaExtranjeraImg,
-    link: "/cuenta-extranjera",
-  },
+  //{
+    //title: "Capacitaciones Privadas",
+    //description: "Aprendé estrategias de inversión con sesiones exclusivas y personalizadas.",
+    //image: capacitacionesImg,
+    //link: "/capacitaciones",
+  //},
+  //{
+    //title: "Apertura de Cuenta Extranjera",
+    //description: "Accedé a mercados internacionales con una cuenta en el exterior.",
+    //image: cuentaExtranjeraImg,
+    //link: "/cuenta-extranjera",
+  //},
   {
     title: "Servicios para PyMEs",
     description: "Soluciones de financiamiento y optimización para tu empresa.",
@@ -58,7 +52,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* 🔹 Encabezado con imagen de fondo */}
       <div
         className="relative h-[40vh] flex items-center justify-center bg-cover bg-center text-white text-center"
@@ -79,8 +73,8 @@ const Services = () => {
       </div>
 
       {/* 🔹 Sección de tarjetas */}
-      <div className="py-16 px-6 bg-gray-50">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="py-16 px-2 bg-gradient-to-b from-[#1C2751] to-[#344C92]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={index}

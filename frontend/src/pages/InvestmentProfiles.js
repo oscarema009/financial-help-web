@@ -6,7 +6,7 @@ import PerfilEmpresa from "../assets/perfil empresa.png";
 
 const InvestmentProfiles = () => {
   return (
-    <div className="p-8 bg-[#303e5b] min-h-screen">
+    <div className="p-8 bg-gradient-to-b from-[#1C2751] to-[#344C92] min-h-screen">
       <h1 className="text-2xl font-bold text-center mb-8 text-white">Perfiles de Inversión</h1>
       {/* Contenedor principal */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -21,12 +21,12 @@ const InvestmentProfiles = () => {
               />
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center text-blue-600">Riesgo Bajo</h2>
+          <h2 className="text-xl font-semibold text-center text-blue-600">Conservador</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
           El perfil conservador se caracteriza por una baja adversion al riesgo buscando la seguridad, y
 al mismo tiempo asumir un menor nivel de riesgo en sus inversiones, es por eso que la
 conformamos de esta manera. Ultimas inversiones:
-            GOOG, INTC, PFE, DELL, SPY. Ganancias en el 2024: 21.5%.
+            GOOG, INTC, PFE, DELL, SPY.
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">
@@ -55,10 +55,10 @@ conformamos de esta manera. Ultimas inversiones:
               />
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center text-blue-600">Riesgo Medio</h2>
+          <h2 className="text-xl font-semibold text-center text-blue-600">Moderado</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
           El perfil moderado busca un balance entre seguridad y crecimiento, asumiendo riesgos controlados para obtener rendimientos competitivos. Está diseñado para quienes prefieren diversificar sus opciones manteniendo un enfoque estratégico. Ultimas inversiones:
-            QCOM, KO, INTC, AMD, AAL, PEP.Ganancias en el 2024: 84.6%.
+            QCOM, KO, INTC, AMD, AAL, PEP.
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">
@@ -87,10 +87,10 @@ conformamos de esta manera. Ultimas inversiones:
               />
             </div>
           </div>
-          <h2 className="text-xl font-semibold text-center text-blue-600">Riesgo Alto</h2>
+          <h2 className="text-xl font-semibold text-center text-blue-600">Agresivo</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
           El perfil agresivo está enfocado en maximizar el rendimiento a través de estrategias de inversión arriesgadas. Ideal para quienes están dispuestos a asumir riesgos altos con el objetivo de obtener ganancias significativas a largo plazo. Ultimas inversiones:
-            AMD, AAL, TSM, QCOM, SNOW.Ganancias en el 2024: 126%.
+            AMD, AAL, TSM, QCOM, SNOW.
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">
@@ -109,23 +109,8 @@ conformamos de esta manera. Ultimas inversiones:
         </div>
       </div>
 
-      {/* Card 4 - PyMEs */}
-      <div className="bg-white p-6 rounded-lg shadow-md mt-8 mx-auto max-w-md">
-        <div className="flex justify-center mb-4">
-          <div className="bg-gray-200 w-24 h-24 rounded-full flex items-center justify-center">
-            <img
-              src={PerfilEmpresa}
-              alt="PyMEs"
-              className="rounded-full"
-            />
-          </div>
-        </div>
-        <h2 className="text-xl font-semibold text-center text-blue-600">PyMEs</h2>
-        <p className="text-sm text-gray-600 text-center mt-2">
-        Este perfil está diseñado para pequeñas y medianas empresas que buscan maximizar su capital mediante estrategias financieras sólidas. Ofrecemos soluciones personalizadas que equilibran el crecimiento sostenible con la diversificación de activos, asegurando estabilidad y expansión en el mercado.
-        </p>
-        
-      </div>
+      
+
     </div>
   );
 };

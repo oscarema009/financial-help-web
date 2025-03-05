@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 const Pymes = () => {
   return (
-    <div className="bg-gray-50 min-h-screen px-6 py-16">
+    <div className="bg-[#1C2751] min-h-screen px-6 py-16">
       {/* Título */}
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+      <h2 className="text-3xl font-bold text-center text-white mb-10">
         Beneficios de las PyMEs con Estrategias LB
       </h2>
 
@@ -29,8 +29,8 @@ const Pymes = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl font-semibold mb-4">Financiamiento más accesible y flexible</h3>
-          <p className="text-lg">
+          <h3 className="text-2xl font-semibold mb-4 text-white">Financiamiento más accesible y flexible</h3>
+          <p className="text-lg text-white">
             Si tu PyME aún depende solo de los bancos, es posible que estés pagando de más. Con el mercado de capitales,
             accedé a tasas más bajas, mayor flexibilidad y beneficios fiscales que optimizan tu estructura financiera.
           </p>
@@ -97,8 +97,8 @@ const Pymes = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="text-2xl font-semibold">🚀 Impulsá tu PyME con Estrategias LB</h3>
-        <p className="text-lg text-gray-600 mt-2">
+        <h3 className="text-2xl text-white font-semibold">🚀 Impulsá tu PyME con Estrategias LB</h3>
+        <p className="text-lg text-white mt-2">
           El mercado de capitales es la clave para financiar tu empresa de manera eficiente, reduciendo costos y maximizando oportunidades.
         </p>
         <p className="text-lg font-semibold mt-2 text-blue-600">¡Hacé crecer tu negocio con nosotros!</p>
