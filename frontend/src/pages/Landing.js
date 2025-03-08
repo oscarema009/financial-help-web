@@ -25,7 +25,7 @@ export default function LandingPage() {
       {/* Contenido de texto - full width en móvil, mitad derecha en desktop */}
       <div className="ml-auto text-left w-full md:w-1/2 z-10">
         <motion.p 
-          className="text-[#00A3FF] uppercase font-bold tracking-wider mb-2 text-sm md:text-base"
+          className="text-[#00A3FF] uppercase text-4xl font-bold tracking-wider mb-2  md:text-5x1"
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8 }}
@@ -48,7 +48,7 @@ export default function LandingPage() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Operá carteras de CEDEARs de las industrias más relevantes armadas por nuestros especialistas.
+          Desde el equipo Estrategia LB te ofrecemos un servicio personalizado acorde a tu perfil y horizonte de inversion.
         </motion.p>
 
         {/* Botón centrado en móvil, alineado a la izquierda en desktop */}
@@ -59,7 +59,7 @@ export default function LandingPage() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <a 
-            href="#inversiones"
+            href="/Contacto"
             className="bg-[#00A3FF] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#008BCC] transition"
           >
             Invertir

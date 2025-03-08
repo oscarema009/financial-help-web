@@ -55,7 +55,7 @@ const ContactPage = () => {
     "¡Hola! Gracias por contactarnos. ¿En qué podemos ayudarte? ¿Estás interesado en alguno de nuestros servicios?"
   );
 
-  const whatsappURL = `https://wa.me/+5493794881936?text=${whatsappMessage}`;
+  const whatsappURL = `https://wa.me/+5491138607950?text=${whatsappMessage}`;
 
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-6 bg-[#1C2751] min-h-screen relative">

@@ -11,7 +11,7 @@ const AboutUs = () => {
                         Asesoramiento Financiero
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Invertir con EstrategiasLB
+                        Invertir con Estrategias LB
                     </h2>
                     <p className="text-lg md:text-xl text-[#c9daff]">
                         En EstrategiasLB nos enfocamos en brindar asesoramiento financiero de calidad,
@@ -19,9 +19,7 @@ const AboutUs = () => {
                         y creamos estrategias adaptadas al perfil de cada cliente, acompañándolos en cada
                         decisión para alcanzar sus objetivos de manera segura y sostenible.
                     </p>
-                    <button className="mt-6 py-2 px-6 bg-[#00A3FF] text-white rounded-full hover:bg-[#82A1D1] hover:text-[#1C2751] transition">
-                        Contáctanos
-                    </button>
+                    
                 </div>
 
                 {/* Columna de imagen */}

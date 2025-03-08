@@ -1,42 +1,34 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./componentes/Header";
 import Footer from "./componentes/Footer";
-import LandingPage from "./pages/Landing";
-import About from "./pages/About";
-//import Portfolios from "./pages/PortafolioPage";
-import Profiles from "./pages/InvestmentProfiles";
+import Home from "./pages/Home"; 
 import Services from "./pages/Services";
-import AdminCartera from "./pages/Gestion.js"
+import AdminCartera from "./pages/Gestion";
 import Pymes from "./pages/Pymes";
-import ComunidadWhatsApp from "./pages/ComunidadWhatsApp.jsx"
-
+import ComunidadWhatsApp from "./pages/ComunidadWhatsApp";
+import AsesoriaFinanciera from "./pages/AsesoriaFinanciera";
 import ContactPage from "./pages/ContactPage";
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="pt-16 md:pt-20">
-      {/* Cabecera */}
       <Header />
-
-      {/* Secciones */}
-      <LandingPage />
-      <About />
-      <Profiles />
-      <Services/>
-      <AdminCartera/>
-      <Pymes />
-      <ComunidadWhatsApp/>
-      
-      
-      <ContactPage />
-
-      {/* Pie de página */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/servicios" element={<Services />} />
+        <Route path="/gestion-portafolios" element={<AdminCartera />} />
+        <Route path="/grupos" element={<ComunidadWhatsApp />} />
+        <Route path="/pymes" element={<Pymes />} />
+        <Route path="/asesoria-financiera" element={<AsesoriaFinanciera />} />
+        <Route path="/Contacto" element={<ContactPage />} />
+      </Routes>
       <Footer />
     </div>
   );
 }
 
 export default App;
-//<Portfolios />
+
+
 

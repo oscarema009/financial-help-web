@@ -23,10 +23,9 @@ const InvestmentProfiles = () => {
           </div>
           <h2 className="text-xl font-semibold text-center text-blue-600">Conservador</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
-          El perfil conservador se caracteriza por una baja adversion al riesgo buscando la seguridad, y
-al mismo tiempo asumir un menor nivel de riesgo en sus inversiones, es por eso que la
-conformamos de esta manera. Ultimas inversiones:
-            GOOG, INTC, PFE, DELL, SPY.
+          El perfil Conservador se caracteriza por una baja de riesgo buscando la seguridad, y al mismo tiempo asumir un menor nivel de riesgo en sus inversiones, es por esto que la conformamos de esta manera en año 2024.
+Bonos Arg AL30, GD30,  Letras S31M5, bonos corporativos YMCXO, VSCRO.
+Rendimiento en el año 2024: 15,8%
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">
@@ -58,7 +57,8 @@ conformamos de esta manera. Ultimas inversiones:
           <h2 className="text-xl font-semibold text-center text-blue-600">Moderado</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
           El perfil moderado busca un balance entre seguridad y crecimiento, asumiendo riesgos controlados para obtener rendimientos competitivos. Está diseñado para quienes prefieren diversificar sus opciones manteniendo un enfoque estratégico. Ultimas inversiones:
-            QCOM, KO, INTC, AMD, AAL, PEP.
+          SYP, YPF, AMAZON, APPLE, GOOGLE, JP MORGAN.
+          Rendimiento 2024: 54%
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">
@@ -90,7 +90,8 @@ conformamos de esta manera. Ultimas inversiones:
           <h2 className="text-xl font-semibold text-center text-blue-600">Agresivo</h2>
           <p className="text-sm text-gray-600 text-center mt-2">
           El perfil agresivo está enfocado en maximizar el rendimiento a través de estrategias de inversión arriesgadas. Ideal para quienes están dispuestos a asumir riesgos altos con el objetivo de obtener ganancias significativas a largo plazo. Ultimas inversiones:
-            AMD, AAL, TSM, QCOM, SNOW.
+          NVIDIA, STARBUCKS, MIICRON TECHNOLOGY, META, MARVELL, ROBLOX.7
+          Rendimientos 2024: 86%
           </p>
           {/* Nivel de Riesgo */}
           <div className="w-full mt-4">

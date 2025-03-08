@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "../componentes/Card";
 import Personas from "../assets/personas.jpg";
 
@@ -16,13 +17,13 @@ const services = [
     title: "Asesorías Financieras",
     description: "Optimiza tu estrategia de inversión con expertos en mercados financieros.",
     image: asesoriasImg,
-    link: "/asesorias",
+    link: "/asesoria-financiera",
   },
   {
     title: "Gestión de Portafolios",
     description: "Administramos tu cartera de inversión con estrategias avanzadas.",
     image: portafoliosImg,
-    link: "/portafolios",
+    link: "/gestion-portafolios",
   },
   //{
     //title: "Capacitaciones Privadas",
@@ -50,6 +51,12 @@ const services = [
   },
 ];
 
+const whatsappMessage = encodeURIComponent(
+  "¡Hola! Gracias por contactarnos. ¿En qué podemos ayudarte? ¿Estás interesado en alguno de nuestros servicios?"
+);
+
+const whatsappURL = `https://wa.me/+5491138607950?text=${whatsappMessage}`;
+
 const Services = () => {
   return (
     <div className="min-h-screen ">
@@ -64,7 +71,7 @@ const Services = () => {
         <div className="relative z-10">
           <h1 className="text-4xl font-bold">Potenciá tus inversiones con Estrategias LB</h1>
           <a
-            href="/contacto"
+            href={whatsappURL}
             className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg text-lg transition-all duration-300 inline-block"
           >
             Hablá con un asesor
