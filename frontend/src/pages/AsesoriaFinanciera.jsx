@@ -32,7 +32,7 @@ export default function AsesoriaFinanciera() {
         <h1 className="text-4xl md:text-5xl font-bold">Asesoría Financiera Personalizada</h1>
         <p className="mt-4 text-lg md:text-xl">Optimiza tu estrategia de inversión con el acompañamiento de expertos.</p>
         <motion.a 
-          href="#contacto"
+          href="/contacto"
           className="mt-6 inline-block bg-[#00A3FF] text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:bg-[#344C92] transition"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -103,7 +103,7 @@ export default function AsesoriaFinanciera() {
       >
         <h2 className="text-3xl font-bold">¿Listo para transformar tus inversiones?</h2>
         <a 
-          href="#contacto" 
+          href="/contacto" 
           className="mt-6 inline-block bg-[#00A3FF] text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:bg-[#344C92] transition"
         >
           Solicitar Asesoría

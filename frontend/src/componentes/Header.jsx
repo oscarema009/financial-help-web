@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Íconos para el menú hamburguesa
-import logo from "../assets/Estrategias LB.png";
+import logo from "../assets/LBlogo.png";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

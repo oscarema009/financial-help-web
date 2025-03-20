@@ -51,7 +51,7 @@ export default function ComunidadWhatsApp() {
             </div>
           </div>
           <motion.a
-            href="https://chat.whatsapp.com/tu-link-de-invitacion"
+            href="https://chat.whatsapp.com/L7tt9GjgqHz6ulMzAdJqR3"
             target="_blank"
             className="inline-flex items-center space-x-3 bg-[#25D366] text-[#1C2751] font-bold text-lg py-3 px-6 rounded-full hover:bg-[#128C7E] transition"
             whileHover={{ scale: 1.05 }}

@@ -23,6 +23,7 @@
     "web-vitals": "^4.2.4",
     "yahoo-finance2": "^2.13.3"
   },
+  "homepage": "http://estrategiaslb.com.ar/",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
