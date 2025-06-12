@@ -21,7 +21,7 @@ export default function AsesoriaFinanciera() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#f4f7fa] text-[#1C2751]">
+    <section className="min-h-screen bg-[#f4f7fa] text-[#1C2751] mt-12">
       {/* Hero */}
       <motion.div 
         className="text-center py-16 bg-[#1C2751] text-white"

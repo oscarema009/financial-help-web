@@ -4,8 +4,11 @@ module.exports = {
       "./src/**/*.{js,jsx,ts,tsx}", // Incluye todos los archivos relevantes en tu proyecto
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          fintech: ['Montserrat', 'sans-serif'],
+        },
+      },
     },
     plugins: [],
   };
-  

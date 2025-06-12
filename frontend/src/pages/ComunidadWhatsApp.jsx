@@ -1,11 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaWhatsapp, FaBell, FaUsers, FaGlobe } from 'react-icons/fa';
+import { FaWhatsapp, FaBell, FaUsers, FaGlobe, FaBookOpen } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 export default function ComunidadWhatsApp() {
+  const navigate = useNavigate();
+
   return (
-    <section className="w-full bg-gradient-to-b from-[#1C2751] to-[#344C92] py-16 px-6 md:px-20 text-white">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="w-full  flex flex-col bg-gradient-to-b from-[#1C2751] to-[#344C92] py-36 px-6 md:px-20 text-white mt-24">
+      <div className="flex-1 max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Mockup del chat */}
         <motion.div
           className="relative bg-white text-black p-4 rounded-3xl shadow-xl w-full max-w-[400px] mx-auto"
@@ -59,8 +62,19 @@ export default function ComunidadWhatsApp() {
             <FaWhatsapp size={24} />
             <span>Unirme al Grupo</span>
           </motion.a>
+
+          {/* Botón para Aprender */}
+          <motion.button
+            onClick={() => navigate('/aprende-con-nosotros')}
+            className="inline-flex items-center space-x-3 border-2 border-white text-white font-semibold text-lg py-3 px-6 rounded-full hover:bg-white hover:text-[#1C2751] transition"
+            whileHover={{ scale: 1.05 }}
+          >
+            <FaBookOpen size={22} />
+            <span>Aprendé con nosotros</span>
+          </motion.button>
         </div>
       </div>
     </section>
   );
 }
+

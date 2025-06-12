@@ -1,5 +1,5 @@
-import React from "react";
-import Nosotros1 from "../assets/trabajando1.jpg";
+import React from "react"; 
+import Cuadro from "../componentes/cuadro";
 
 const AboutUs = () => {
     return (
@@ -19,27 +19,15 @@ const AboutUs = () => {
                         y creamos estrategias adaptadas al perfil de cada cliente, acompañándolos en cada
                         decisión para alcanzar sus objetivos de manera segura y sostenible.
                     </p>
-                    
                 </div>
 
-                {/* Columna de imagen */}
+                {/* Columna de card Cuadro */}
                 <div className="flex justify-center">
-                    <div className="relative w-full max-w-sm">
-                        <img
-                            src={Nosotros1}
-                            alt="Asesor financiero"
-                            className="rounded-lg shadow-lg w-full"
-                        />
-                        <div className="absolute bottom-0 left-0 bg-[#1C2751]/80 p-4 text-white w-full">
-                            <p className="text-lg font-bold">EstrategiasLB</p>
-                            <p className="text-sm">Tu socio financiero de confianza</p>
-                        </div>
-                    </div>
+                    <Cuadro />
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default AboutUs;
-

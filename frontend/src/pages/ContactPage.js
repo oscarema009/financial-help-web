@@ -14,7 +14,7 @@ const ContactPage = () => {
   const whatsappURL = `https://wa.me/+5491138607950?text=${whatsappMessage}`;
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-6 bg-[#1C2751] min-h-screen relative">
+    <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 p-6 pb-12 bg-[#1C2751]  relative mt-16">
       {/* Columna 1: Datos de contacto */}
       <div className="md:w-1/2 w-full bg-white p-6 rounded-lg shadow-lg relative">
         <img src={Negociacion} alt="Oficina" className="w-full h-100 object-cover rounded-lg mb-4" />
@@ -24,7 +24,7 @@ const ContactPage = () => {
         </div>
         <div className="flex items-center mb-4">
           <img src={Correo} className="h-6 w-6 text-blue-600 mr-2" alt="Correo" />
-          <p className="text-gray-700">Correo: Estrategiaslb@gmail.com</p>
+          <p className="text-gray-700">Correo: contacto@estrategiaslb.com.ar</p>
         </div>
         <div className="flex items-center">
           <img src={Telefono} className="h-6 w-6 text-blue-600 mr-2" alt="Teléfono" />

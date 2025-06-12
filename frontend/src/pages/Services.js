@@ -12,6 +12,12 @@ import cuentaExtranjeraImg from "../assets/alrededor-del-mundo.png";
 import pymesImg from "../assets/empresa.png";
 import gruposImg from "../assets/grupo-de-chat.png";
 
+import Logo1 from "../assets/cocos.png";
+import Logo2 from "../assets/iol.png";
+import Logo3 from "../assets/interactive.png";
+import Logo4 from "../assets/balanz.png";
+import Logo5 from "../assets/bulls markets.png";
+
 const services = [
   {
     title: "Asesorías Financieras",
@@ -44,7 +50,7 @@ const services = [
     link: "/pymes",
   },
   {
-    title: "Grupos de WhatsApp",
+    title: "Comunidad de WhatsApp",
     description: "Accedé a nuestras comunidades de inversión y aprendizaje financiero.",
     image: gruposImg,
     link: "/grupos",
@@ -80,8 +86,8 @@ const Services = () => {
       </div>
 
       {/* 🔹 Sección de tarjetas */}
-      <div className="py-16 px-2 bg-gradient-to-b from-[#1C2751] to-[#344C92]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div className="py-8 px-4 bg-gradient-to-b from-[#1C2751] to-[#344C92]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -94,6 +100,28 @@ const Services = () => {
           ))}
         </div>
       </div>
+
+          {/* ✅ Logos de empresas – fuera del grid de tarjetas */}
+      <div className="bg-[#344C92] py-4">
+        <h3 className="text-2xl font-bold mb-6 text-center text-white">
+          Trabajan con nosotros
+        </h3>
+        <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center ">
+          {[Logo1, Logo2, Logo3, Logo4, Logo5].map((logo, index) => (
+        <div
+          key={index}
+          className="w-12 h-12 sm:w-20 sm:h-20 bg-white rounded-xl shadow-md flex items-center justify-center overflow-hidden"
+        >
+          <img
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            className="w-full h-full object-contain p-2"
+          />
+        </div>
+        ))}
+      </div>
+      </div>
+
     </div>
   );
 };

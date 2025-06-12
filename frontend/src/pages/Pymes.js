@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Pymes = () => {
   return (
-    <div className="bg-[#1C2751] min-h-screen px-6 py-16">
+    <div className="bg-[#1C2751] min-h-screen px-6 py-16 mt-16">
       {/* Título */}
       <h2 className="text-3xl font-bold text-center text-white mb-10">
         Beneficios de las PyMEs con Estrategias LB

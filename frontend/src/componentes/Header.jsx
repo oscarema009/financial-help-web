@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // Íconos para el menú hamburguesa
+import { Menu, X } from "lucide-react";
 import logo from "../assets/LBlogo.png";
+import TickerTapeWidget from "./TickerTapeWidget"; // Importa el componente ticker
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,7 @@ export default function Header() {
           : "bg-gradient-to-r from-[#1C2751] to-[#0A183D]"
       }`}
     >
-      <div className="flex justify-between items-center px-6 md:px-10 py-4">
+      <div className="flex justify-between items-center px-6 md:px-6 py-4">
         {/* Logo */}
         <motion.img
           src={logo}
@@ -73,6 +74,11 @@ export default function Header() {
           </nav>
         </motion.div>
       )}
+
+      {/* Ticker de TradingView al final del header */}
+      <div className="w-full">
+        <TickerTapeWidget />
+      </div>
     </header>
   );
 }
